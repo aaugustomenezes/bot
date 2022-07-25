@@ -25,7 +25,7 @@ function action(event) {
         return
     }
 
-    var stream = Tweet.stream('statuses/filter', {track: 'Marcinho Não' || 'marcinho não' || 'Marcinho Nao' || 'marcinho nao' || 'MarcinhoNão' || 'marcinhonão'|| 'MarcinhoNao' || 'marcinhonao'});
+    var stream = Tweet.stream('statuses/filter', {track: 'Marcinho Não'});
     stream.on('data', action);
     stream.on('error', erro => console.log("Erro: "+erro));
 }
